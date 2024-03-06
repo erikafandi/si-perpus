@@ -14,4 +14,17 @@ class bukuModels extends Model
     {
         return $this->find($id_buku);
     }
+    public function update_data($data, $id_buku)
+    {
+        $query = $this->db->table($this->table)->update(
+            $data,
+            array('id_buku' => $id_buku)
+        );
+        return $query;
+    }
+    public function delete_data($id_buku)
+    {
+        $query = $this->db->table($this->table)->delete(array('id_buku' => $id_buku));
+        return $query;
+    }
 }

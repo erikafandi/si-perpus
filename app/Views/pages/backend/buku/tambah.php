@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <div class="container-fluid">
     <h1 class="h3 mb-4 text-gray-800">Tambah Data Buku</h1>
-    <form>
+    <form id="tambahbuku" action="<?php echo base_url('admin/buku/simpan') ?>" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="judul">Judul Buku</label>
             <input type="text" class="form-control" id="judul" name="judul_buku" placeholder="Masukkan Judul Buku">
@@ -32,7 +32,7 @@
             <label for="photo">Pilih Foto:</label>
             <input type="file" class="form-control-file" id="photo" name="cover" accept="image/*">
         </div>
-        <button type="submit" class="btn btn-primary">Simpan</button>
+        <button class="btn btn-primary">Simpan</button>
     </form>
 </div>
 <?= $this->endSection() ?>

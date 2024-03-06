@@ -17,14 +17,13 @@
                     <a class="nav-link" aria-current="page" href="#">Daftar Buku</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Sejarah Peminjaman</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">About</a>
                 </li>
 
             </ul>
-            <button class="float-end">logout</button>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-light my-2 my-sm-0 login-btn" type="submit">Login</button>
+            </form>
         </div>
     </div>
 </nav>

@@ -38,3 +38,7 @@ footer {
 .book-description {
     font-size: 1rem;
 }
+
+.navbar .login-btn {
+  margin-right: 10px;
+}

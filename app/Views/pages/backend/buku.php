@@ -15,12 +15,14 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th>no</th>
                             <th>Cover Buku</th>
                             <th>Judul</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Pengarang</th>
+                            <th>Penerbit</th>
+                            <th>Tahun Terbit</th>
+                            <th>Ringkasan Buku</th>
+                            <th>Jumlah Salinan Tersedia</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,12 +30,14 @@
                         $no = 1;
                         foreach ($buku as $key) : ?>
                             <tr>
-                                <td></td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
+                                <td><?= $no++; ?></td>
+                                <td><img src="<?= base_url('img/cover_buku/' . $key['cover_buku']); ?>" style="width: 200px;"></td>
+                                <td><?= $key['judul']; ?></td>
+                                <td><?= $key['pengarang']; ?></td>
+                                <td><?= $key['penerbit']; ?></td>
+                                <td><?= $key['tahun_terbit']; ?></td>
+                                <td><?= $key['ringkasan_buku']; ?></td>
+                                <td><?= $key['jumlah_salinan_tersedia']; ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
