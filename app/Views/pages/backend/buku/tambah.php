@@ -6,19 +6,19 @@
     <form>
         <div class="form-group">
             <label for="judul">Judul Buku</label>
-            <input type="text" class="form-control" id="judul" placeholder="Masukkan Judul Buku">
+            <input type="text" class="form-control" id="judul" name="judul_buku" placeholder="Masukkan Judul Buku">
         </div>
         <div class="form-group">
             <label for="pengarang">Pengarang</label>
-            <input type="text" class="form-control" id="pengarang" placeholder="Masukkan Nama Pengarang">
+            <input type="text" class="form-control" id="pengarang" name="pengarang" placeholder="Masukkan Nama Pengarang">
         </div>
         <div class="form-group">
             <label for="penerbit">Penerbit</label>
-            <input type="text" class="form-control" id="penerbit" placeholder="Masukkan Nama Penerbit">
+            <input type="text" class="form-control" id="penerbit" name="penerbit" placeholder="Masukkan Nama Penerbit">
         </div>
         <div class="form-group">
             <label for="tahun_terbit">Tahun Terbit</label>
-            <input type="number" class="form-control" id="tahun_terbit" placeholder="Masukkan Tahun Terbit">
+            <input type="number" class="form-control" id="tahun_terbit" name="tahun_terbit" placeholder="Masukkan Tahun Terbit">
         </div>
         <div class="form-group">
             <label for="ringkasan">Ringkasan Buku</label>
@@ -26,7 +26,11 @@
         </div>
         <div class="form-group">
             <label for="jumlah_buku">Jumlah Salinan Tersedia</label>
-            <input type="number" class="form-control" id="jumlah_buku" placeholder="Masukkan Jumlah Buku">
+            <input type="number" class="form-control" id="jumlah_buku" name="jumlah_salinan_tersedia" placeholder="Masukkan Jumlah Buku">
+        </div>
+        <div class="form-group">
+            <label for="photo">Pilih Foto:</label>
+            <input type="file" class="form-control-file" id="photo" name="cover" accept="image/*">
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
