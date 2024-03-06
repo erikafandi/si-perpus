@@ -89,6 +89,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="card book-card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul Buku 4</h5>
+                            <p class="card-text">Deskripsi buku 4.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
