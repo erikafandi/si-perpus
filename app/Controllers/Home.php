@@ -2,10 +2,23 @@
 
 namespace App\Controllers;
 
+use App\Models\bukuModels;
+
 class Home extends BaseController
 {
-    public function index(): string
+    protected $bukuModels;
+    public function __construct()
     {
-        return view('pages/frontend/home');
+        $this->bukuModels = new bukuModels();
+    }
+    public function index()
+    {
+        $buku = $this->bukuModels->orderBy("tanggal_input_buku", "DESC")->limit(4)->find();
+
+        $data = [
+            'buku' => $buku,
+        ];
+
+        return view('pages/frontend/home', $data);
     }
 }
