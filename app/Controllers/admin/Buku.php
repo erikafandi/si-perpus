@@ -83,4 +83,71 @@ class Buku extends BaseController
         ]);
         return redirect()->to('admin/buku');
     }
+
+    public function edit($id_buku)
+    {
+        $buku = $this->bukuModels->data_buku($id_buku);
+        $data = [
+            'title' => 'Edit Data agenda',
+            'buku' => $buku
+        ];
+
+        return view('pages/backend/buku/edit', $data);
+    }
+
+    //     public function update()
+    //     {
+    //         $validationRule = [
+    //             'userfile' => [
+    //                 'label' => 'Image File',
+    //                 'rules' => [
+    //                     'uploaded[userfile]',
+    //                     'is_image[userfile]',
+    //                     'mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+    //                 ],
+    //             ],
+    //         ];
+
+    //         $id_agenda = $this->request->getVar('id');
+    //         $userfile = $this->request->getFile('userfile');
+
+    //         $data = [
+    //             'judul_agenda' => $this->request->getVar('judul_agenda'),
+    //             'deskripsi_agenda'  => $this->request->getVar('deskripsi_agenda'),
+    //             'lokasi' => $this->request->getVar('lokasi'),
+    //         ];
+
+    //         if ($userfile != null) {
+    //             if (!$this->validate($validationRule)) {
+    //                 return redirect()->back()->with('errors', $this->validator->getErrors())->withInput();
+    //             }
+    //             $fileLama = $this->agendaModels->find($id_agenda)['userfile'];
+    //             $filePath = ROOTPATH . 'public/img/agenda/' . $fileLama;
+    //             if (file_exists($filePath)) {
+    //                 unlink($filePath);
+    //             }
+    //             if (!$userfile->hasMoved()) {
+    //                 $fileName = $userfile->getName();
+    //                 $userfile->move(ROOTPATH . 'public/img/agenda', $fileName);
+    //             } else {
+    //                 return redirect()->back()->with('errors', 'File sudah di pindahkan!');
+    //             }
+    //             $data = [
+    //                 'judul_agenda' => $this->request->getVar('judul_agenda'),
+    //                 'deskripsi_agenda'  => $this->request->getVar('deskripsi_agenda'),
+    //                 'lokasi' => $this->request->getVar('lokasi'),
+    //                 'userfile' => $fileName
+
+    //             ];
+    //         }
+
+    //         $this->agendaModels->update_data($data, $id_agenda);
+    //         return redirect()->to('admin/agenda');
+    //     }
+
+    //     public function delete($id_agenda)
+    //     {
+    //         $this->agendaModels->delete_data($id_agenda);
+    //         return redirect()->to('admin/agenda');
+    //     }
 }
