@@ -2,10 +2,10 @@
 <?= $this->section('title') ?>Daftar Buku<?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <div class="container-fluid">
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Daftar Buku</h1>
+    <div class="d-sm-flex align-items-center justify-content-between mb-0">
+        <h1 class="h3 mb-0 text-gray-800">Daftar Kategori</h1>
     </div>
-    <a href="buku/tambah" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
+    <a href="kategori/tambah" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
@@ -15,33 +15,21 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>no</th>
-                            <th>Cover Buku</th>
-                            <th>Judul</th>
-                            <th>Pengarang</th>
-                            <th>Penerbit</th>
-                            <th>Tahun Terbit</th>
-                            <th>Ringkasan Buku</th>
-                            <th>Jumlah Salinan Tersedia</th>
+                            <th>No</th>
+                            <th>Nama Kategori</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         $no = 1;
-                        foreach ($buku as $key) : ?>
+                        foreach ($kategori as $key) : ?>
                             <tr>
                                 <td><?= $no++; ?></td>
-                                <td><img src="<?= base_url('img/cover_buku/' . $key['cover_buku']); ?>" style="width: 200px;"></td>
-                                <td><?= $key['judul']; ?></td>
-                                <td><?= $key['pengarang']; ?></td>
-                                <td><?= $key['penerbit']; ?></td>
-                                <td><?= $key['tahun_terbit']; ?></td>
-                                <td><?= $key['ringkasan_buku']; ?></td>
-                                <td><?= $key['jumlah_salinan_tersedia']; ?></td>
+                                <td><?= $key['nama_kategori']; ?></td>
                                 <td>
-                                    <a href="buku/edit/<?= $key['id_buku'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="buku/delete/<?= $key['id_buku'] ?>" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#HapusModal">Hapus</a>
+                                    <a href="kategori/edit/<?= $key['id_kategori'] ?> " class="btn btn-warning btn-sm">Edit</a>
+                                    <a href="kategori/delete/<?= $key['id_kategori'] ?>" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#HapusModal">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -63,7 +51,7 @@
             <div class="modal-body">Anda Yakin Ingin Menghapus Data Ini?</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger" href="">Hapus</a>
+                <a class="btn btn-danger" href="kategori/delete/<?= $key['id_kategori'] ?>">Hapus</a>
             </div>
         </div>
     </div>

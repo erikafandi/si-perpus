@@ -45,6 +45,7 @@ class Buku extends BaseController
             ],
         ];
 
+
         $cover = $this->request->getFile('cover');
 
 
@@ -95,59 +96,73 @@ class Buku extends BaseController
         return view('pages/backend/buku/edit', $data);
     }
 
-    //     public function update()
-    //     {
-    //         $validationRule = [
-    //             'userfile' => [
-    //                 'label' => 'Image File',
-    //                 'rules' => [
-    //                     'uploaded[userfile]',
-    //                     'is_image[userfile]',
-    //                     'mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
-    //                 ],
-    //             ],
-    //         ];
+    public function update()
+    {
+        $validationRule = [
+            'cover' => [
+                'label' => 'Image File',
+                'rules' => [
+                    // aturan dari file yang akan diupload
+                    'uploaded[cover]',
+                    'is_image[cover]',
 
-    //         $id_agenda = $this->request->getVar('id');
-    //         $userfile = $this->request->getFile('userfile');
+                    // ekstensi yang diperbolehkan ketika upload file
+                    'mime_in[cover,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                ],
+            ],
+        ];
 
-    //         $data = [
-    //             'judul_agenda' => $this->request->getVar('judul_agenda'),
-    //             'deskripsi_agenda'  => $this->request->getVar('deskripsi_agenda'),
-    //             'lokasi' => $this->request->getVar('lokasi'),
-    //         ];
+        $id_buku = $this->request->getVar('id');
+        $cover = $this->request->getFile('cover');
 
-    //         if ($userfile != null) {
-    //             if (!$this->validate($validationRule)) {
-    //                 return redirect()->back()->with('errors', $this->validator->getErrors())->withInput();
-    //             }
-    //             $fileLama = $this->agendaModels->find($id_agenda)['userfile'];
-    //             $filePath = ROOTPATH . 'public/img/agenda/' . $fileLama;
-    //             if (file_exists($filePath)) {
-    //                 unlink($filePath);
-    //             }
-    //             if (!$userfile->hasMoved()) {
-    //                 $fileName = $userfile->getName();
-    //                 $userfile->move(ROOTPATH . 'public/img/agenda', $fileName);
-    //             } else {
-    //                 return redirect()->back()->with('errors', 'File sudah di pindahkan!');
-    //             }
-    //             $data = [
-    //                 'judul_agenda' => $this->request->getVar('judul_agenda'),
-    //                 'deskripsi_agenda'  => $this->request->getVar('deskripsi_agenda'),
-    //                 'lokasi' => $this->request->getVar('lokasi'),
-    //                 'userfile' => $fileName
+        $data = [
+            'judul' => $this->request->getVar('judul_buku'),
+            'pengarang'  => $this->request->getVar('pengarang'),
+            'penerbit' => $this->request->getVar('penerbit'),
+            'tahun_terbit' => $this->request->getVar('tahun_terbit'),
+            'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
+            'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
+        ];
 
-    //             ];
-    //         }
+        if ($cover != null) {
+            if (!$this->validate($validationRule)) {
 
-    //         $this->agendaModels->update_data($data, $id_agenda);
-    //         return redirect()->to('admin/agenda');
-    //     }
+                // tampil pesan error
+                return redirect()->back()->with('errors', $this->validator->getErrors())->withInput();
+            }
+            $fileLama = $this->bukuModels->find($id_buku)['cover'];
+            $filePath = ROOTPATH . 'public/img/cover_buku/' . $fileLama;
+            if (file_exists($filePath)) {
+                unlink($filePath);
+            }
+            if (!$cover->hasMoved()) {
+                $fileName = $cover->getName();
 
-    //     public function delete($id_agenda)
-    //     {
-    //         $this->agendaModels->delete_data($id_agenda);
-    //         return redirect()->to('admin/agenda');
-    //     }
+                // echo $fileName;
+                // mindahin file ke folder public/img/berita
+                $cover->move(ROOTPATH . 'public/img/cover_buku', $fileName);
+            } else {
+                return redirect()->back()->with('errors', 'File sudah di pindahkan!');
+            }
+            $data = [
+                'judul' => $this->request->getVar('judul_buku'),
+                'pengarang'  => $this->request->getVar('pengarang'),
+                'penerbit' => $this->request->getVar('penerbit'),
+                'tahun_terbit' => $this->request->getVar('tahun_terbit'),
+                'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
+                'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
+                'cover_buku' => $fileName,
+
+            ];
+        }
+
+        $this->bukuModels->update_data($data, $id_buku);
+        return redirect()->to('admin/buku');
+    }
+
+    public function delete($id_buku)
+    {
+        $this->bukuModels->delete_data($id_buku);
+        return redirect()->to('admin/buku');
+    }
 }
