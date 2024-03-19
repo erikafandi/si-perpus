@@ -69,7 +69,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url('admin/denda') ?>">
             <i class="fas fad fa-dollar-sign"></i>
             <span>Denda</span></a>
     </li>
@@ -86,7 +86,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url('admin/petugas') ?>">
             <i class="fas fad fa-user-tie"></i>
             <span>Petugas</span></a>
     </li>

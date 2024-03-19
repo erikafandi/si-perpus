@@ -14,4 +14,17 @@ class dendaModels extends Model
     {
         return $this->find($id_denda);
     }
+    public function update_data($data, $id_denda)
+    {
+        $query = $this->db->table($this->table)->update(
+            $data,
+            array('id_denda' => $id_denda)
+        );
+        return $query;
+    }
+    public function delete_data($id_denda)
+    {
+        $query = $this->db->table($this->table)->delete(array('id_denda' => $id_denda));
+        return $query;
+    }
 }
