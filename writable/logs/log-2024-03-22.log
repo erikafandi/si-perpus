@@ -1,0 +1,173 @@
+CRITICAL - 2024-03-22 13:39:39 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-22 13:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 13:39:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:42:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\petugas\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\petugas\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\petugas\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\petugas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/petugas/edit', [], true)
+ 5 APPPATH\Controllers\admin\petugas.php(93): view('pages/backend/petugas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\petugas->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\petugas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:45:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:45:54 --> ErrorException: Undefined index: cover
+in APPPATH\Controllers\admin\Buku.php on line 133.
+ 1 APPPATH\Controllers\admin\Buku.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cover', 'C:\\xampp\\htdocs\\si-perpus\\app\\Controllers\\admin\\Buku.php', 133, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:46:10 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:46:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:46:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:48:58 --> ErrorException: Undefined variable: key
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:49:07 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:49:18 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pages\backend\buku\edit.php on line 7.
+ 1 APPPATH\Views\pages\backend\buku\edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku/edit', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(96): view('pages/backend/buku/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:49:21 --> ErrorException: Undefined index: id_buku
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:49:22 --> ErrorException: Undefined index: id_buku
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:50:12 --> ErrorException: Undefined variable: key
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:51:08 --> ErrorException: Undefined index: id_buku
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 13:51:34 --> ErrorException: Undefined variable: key
+in APPPATH\Views\pages\backend\buku.php on line 66.
+ 1 APPPATH\Views\pages\backend\buku.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(24): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

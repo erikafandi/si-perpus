@@ -63,7 +63,7 @@
             <div class="modal-body">Anda Yakin Ingin Menghapus Data Ini?</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger" href="">Hapus</a>
+                <a class="btn btn-danger" href="buku/delete/<?= $key['id_buku'] ?>">Hapus</a>
             </div>
         </div>
     </div>

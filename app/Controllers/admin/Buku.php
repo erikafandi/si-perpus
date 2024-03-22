@@ -123,25 +123,33 @@ class Buku extends BaseController
             'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
             'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
         ];
-
-        if ($cover != null) {
+        if ($cover->getFilename() != null) {
+            // jika file nya tidak null atau kosong ( empty )
             if (!$this->validate($validationRule)) {
 
                 // tampil pesan error
                 return redirect()->back()->with('errors', $this->validator->getErrors())->withInput();
             }
-            $fileLama = $this->bukuModels->find($id_buku)['cover'];
+            $fileLama = $this->bukuModels->find($id_buku)['cover_buku'];
             $filePath = ROOTPATH . 'public/img/cover_buku/' . $fileLama;
             if (file_exists($filePath)) {
                 unlink($filePath);
             }
+
+            // jika file nya ada dan inputkan
+            // memindahkan file ke folder yang di tentukan
             if (!$cover->hasMoved()) {
+
+                // ngambil nama file
                 $fileName = $cover->getName();
+
 
                 // echo $fileName;
                 // mindahin file ke folder public/img/berita
                 $cover->move(ROOTPATH . 'public/img/cover_buku', $fileName);
             } else {
+
+                //echo $fileName;
                 return redirect()->back()->with('errors', 'File sudah di pindahkan!');
             }
             $data = [
@@ -152,7 +160,6 @@ class Buku extends BaseController
                 'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
                 'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
                 'cover_buku' => $fileName,
-
             ];
         }
 
@@ -162,7 +169,18 @@ class Buku extends BaseController
 
     public function delete($id_buku)
     {
+        $buku = $this->bukuModels->data_buku($id_buku);
+
+        // nama file yang berada dikolom userfile
+        $file = $buku['cover_buku'];
+
+        // proses penghapusan file menggunakan fungsi unlink
+        unlink('../public/img/cover_buku/' . $file);
+
+        // penghapusan database
         $this->bukuModels->delete_data($id_buku);
+
+        // mengakses halaman berita
         return redirect()->to('admin/buku');
     }
 }
