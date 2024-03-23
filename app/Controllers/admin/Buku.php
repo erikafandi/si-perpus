@@ -5,21 +5,26 @@ namespace App\Controllers\admin;
 use App\Controllers\BaseController;
 
 use App\Models\bukuModels;
+use App\Models\kategoriModels;
 
 class Buku extends BaseController
 
 {
-    protected $bukuModels;
+    protected $bukuModels, $kategoriModels;
     public function __construct()
     {
         $this->bukuModels = new bukuModels();
+        $this->kategoriModels = new kategoriModels();
     }
     public function index()
     {
+
         $buku = $this->bukuModels->findAll();
+        $kategori = $this->kategoriModels->findAll();
         $data = [
             'title' => 'Data agenda',
-            'buku' => $buku
+            'buku' => $buku,
+            'kategori' => $kategori,
         ];
         return view('pages/backend/buku', $data);
     }

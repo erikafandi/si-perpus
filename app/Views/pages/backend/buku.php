@@ -23,6 +23,7 @@
                             <th>Tahun Terbit</th>
                             <th>Ringkasan Buku</th>
                             <th>Jumlah Salinan Tersedia</th>
+                            <th>Kategori</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -39,6 +40,7 @@
                                 <td><?= $key['tahun_terbit']; ?></td>
                                 <td><?= $key['ringkasan_buku']; ?></td>
                                 <td><?= $key['jumlah_salinan_tersedia']; ?></td>
+                                <td><?= $key['id_kategori']; ?></td>
                                 <td>
                                     <a href="buku/edit/<?= $key['id_buku'] ?>" class="btn btn-warning btn-sm">Edit</a>
                                     <a href="buku/delete/<?= $key['id_buku'] ?>" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#HapusModal">Hapus</a>
@@ -63,7 +65,7 @@
             <div class="modal-body">Anda Yakin Ingin Menghapus Data Ini?</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger" href="buku/delete/<?= $key['id_buku'] ?>">Hapus</a>
+                <a class="btn btn-danger" href="">Hapus</a>
             </div>
         </div>
     </div>
