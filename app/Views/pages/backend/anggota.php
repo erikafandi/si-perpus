@@ -35,7 +35,7 @@
                                 <td><?= $key['no_telp_anggota']; ?></td>
                                 <td>
                                     <a href="anggota/edit/<?= $key['id_anggota'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="anggota/delete/<?= $key['id_anggota'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="anggota/delete/<?= $key['id_anggota'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

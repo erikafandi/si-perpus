@@ -29,7 +29,7 @@
                                 <td><?= $key['denda']; ?></td>
                                 <td>
                                     <a href="denda/edit/<?= $key['id_denda'] ?> " class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="denda/delete/<?= $key['id_denda'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="denda/delete/<?= $key['id_denda'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

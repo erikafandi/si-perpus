@@ -33,7 +33,7 @@
             <label for="photo">Pilih Foto:</label>
             <input type="file" class="form-control-file" id="photo" name="cover" accept="image/*">
         </div>
-        <button class="btn btn-primary mt-3 mb-3">Simpan</button>
+        <button class="btn btn-primary mt-3 mb-3" onclick="return confirm('Apakah anda yakin akan menambahkan data ini?')">Simpan</button>
     </form>
 </div>
 <?= $this->endSection() ?>

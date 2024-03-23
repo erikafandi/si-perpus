@@ -51,7 +51,7 @@
 
                 <a class="collapse-item" href="<?= base_url('admin/buku') ?>">Data Buku</a>
                 <a class="collapse-item" href="<?= base_url('admin/kategori') ?>">Data Kategori</a>
-                <a class="collapse-item" href="utilities-animation.html">Data Rak</a>
+                <a class="collapse-item" href="<?= base_url('admin/rak') ?>">Data Rak</a>
             </div>
         </div>
     </li>

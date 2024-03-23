@@ -35,7 +35,7 @@
                                 <td><?= $key['no_hp']; ?></td>
                                 <td>
                                     <a href="petugas/edit/<?= $key['id_petugas'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="petugas/delete/<?= $key['id_petugas'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                                    <a href="petugas/delete/<?= $key['id_petugas'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <div class="container-fluid">
     <h1 class="h3 mb-4 text-gray-800">Tambah Data Anggota</h1>
-    <form id="tambahanggota" action="<?php echo base_url('admin/anggota/edit') ?>" method="post" enctype="multipart/form-data">
+    <form id="editanggota" action="<?php echo base_url('admin/anggota/update') ?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $anggota['id_anggota']; ?>">
         <div class="form-group">
             <label for="nama_anggota">Nama</label>
