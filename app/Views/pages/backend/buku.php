@@ -33,7 +33,7 @@
                         foreach ($buku as $key) : ?>
                             <tr>
                                 <td><?= $no++; ?></td>
-                                <td><img src="<?= base_url('img/cover_buku/' . $key['cover_buku']); ?>" style="width: 200px;"></td>
+                                <td><img src="<?= base_url('img/cover_buku/' . $key['cover_buku']); ?>" style="height: 250px; width: 300px;"></td>
                                 <td><?= $key['judul']; ?></td>
                                 <td><?= $key['pengarang']; ?></td>
                                 <td><?= $key['penerbit']; ?></td>

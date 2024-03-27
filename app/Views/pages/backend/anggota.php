@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Daftar Petugas</h1>
+        <h1 class="h3 mb-0 text-gray-800">Daftar Anggota</h1>
     </div>
     <a href="anggota/tambah" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
     <div class="card shadow mb-4">
@@ -18,8 +18,8 @@
                             <th>no</th>
                             <th>Nama</th>
                             <th>Alamat</th>
-                            <th>No Handphone</th>
                             <th>NIS/NISN</th>
+                            <th>No Handphone</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
