@@ -21,10 +21,12 @@
             <p>123456789</p>
         </div>
     </div>
+
+    <BR>
+    <BR>
+    <div id="map" style="height: 400px; margin: 0 auto;"></div>
 </div>
-<BR>
-<BR>
-<div id="map" style="height: 400px; width: 90%; margin: 0 auto;"></div>
+
 
 
 

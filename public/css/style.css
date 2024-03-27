@@ -1,3 +1,8 @@
+.card{
+  height: 300px;;
+  weight: 300px;       
+}
+
 .search-card {
     padding: 20px;
     background-color: #f8f9fa;
