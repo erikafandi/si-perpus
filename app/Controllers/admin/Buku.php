@@ -13,19 +13,13 @@ class Buku extends BaseController
     protected $bukuModels, $kategoriModels;
     public function __construct()
     {
-        $this->bukuModels = new bukuModels();
-        $this->kategoriModels = new kategoriModels();
+        $this->buku = new bukuModels();
+        $this->kategori = new kategoriModels();
     }
     public function index()
     {
 
-        $buku = $this->bukuModels->findAll();
-        $kategori = $this->kategoriModels->findAll();
-        $data = [
-            'title' => 'Data agenda',
-            'buku' => $buku,
-            'kategori' => $kategori,
-        ];
+        $data['Buku'] = $this->buku->getAll();
         return view('pages/backend/buku', $data);
     }
 

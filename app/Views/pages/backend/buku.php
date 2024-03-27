@@ -30,20 +30,20 @@
                     <tbody>
                         <?php
                         $no = 1;
-                        foreach ($buku as $key) : ?>
+                        foreach ($Buku as $key => $value) : ?>
                             <tr>
                                 <td><?= $no++; ?></td>
-                                <td><img src="<?= base_url('img/cover_buku/' . $key['cover_buku']); ?>" style="height: 250px; width: 300px;"></td>
-                                <td><?= $key['judul']; ?></td>
-                                <td><?= $key['pengarang']; ?></td>
-                                <td><?= $key['penerbit']; ?></td>
-                                <td><?= $key['tahun_terbit']; ?></td>
-                                <td><?= $key['ringkasan_buku']; ?></td>
-                                <td><?= $key['jumlah_salinan_tersedia']; ?></td>
-                                <td><?= $key['id_kategori']; ?></td>
+                                <td><img src="<?= base_url('img/cover_buku/' . $value->cover_buku) ?>" style="height: 250px; width: 300px;"></td>
+                                <td><?= $value->judul ?></td>
+                                <td><?= $value->pengarang ?></td>
+                                <td><?= $value->penerbit ?></td>
+                                <td><?= $value->tahun_terbit ?></td>
+                                <td><?= $value->ringkasan_buku ?></td>
+                                <td><?= $value->jumlah_salinan_tersedia ?></td>
+                                <td><?= $value->nama_kategori ?></td>
                                 <td>
-                                    <a href="buku/edit/<?= $key['id_buku'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="buku/delete/<?= $key['id_buku'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
+                                    <a href="buku/edit/<?= $value->id_buku ?>" class="btn btn-warning btn-sm">Edit</a>
+                                    <a href="buku/delete/<?= $value->id_buku ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
