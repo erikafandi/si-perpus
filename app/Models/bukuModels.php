@@ -11,10 +11,10 @@ class bukuModels extends Model
     protected $allowedFields = ['cover_buku', 'judul', 'pengarang', 'penerbit', 'tahun_terbit', 'ringkasan_buku', 'jumlah_salinan_tersedia'];
 
 
-    public function getBooksInfo()
+    public function getData()
     {
-        $builder = $this->db->table($this->table);
-        $builder->select('tbl_buku.id_buku, tbl_buku.cover_buku, tbl_buku.judul, tbl_buku.pengarang, tbl_buku.penerbit, tbl_buku.tahun_terbit, tbl_buku.ringkasan_buku, tbl_buku.jumlah_salinan_tersedia, tbl_kategori.nama_kategori');
+        $builder = $this->db->table('tbl_buku');
+
         $builder->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_buku.id_kategori');
         $query = $builder->get();
 

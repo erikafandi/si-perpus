@@ -236,3 +236,110 @@ in APPPATH\Views\pages\backend\petugas\edit.php on line 7.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\petugas))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:02:52 --> ErrorException: Undefined variable: buku
+in APPPATH\Views\pages\backend\buku.php on line 33.
+ 1 APPPATH\Views\pages\backend\buku.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(23): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:07:44 --> ErrorException: Undefined variable: buku
+in APPPATH\Views\pages\backend\buku.php on line 33.
+ 1 APPPATH\Views\pages\backend\buku.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [...], true)
+ 5 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:11:03 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\backend\buku.php on line 36.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 4 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:12:29 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\backend\buku.php on line 37.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 4 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:12:56 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\backend\buku.php on line 36.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 4 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:12:56 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\backend\buku.php on line 36.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 4 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:13:12 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\backend\buku.php on line 36.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 4 APPPATH\Controllers\admin\Buku.php(25): view('pages/backend/buku', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:13:30 --> ErrorException: Undefined index: nama_kategori
+in APPPATH\Views\pages\backend\buku.php on line 43.
+ 1 APPPATH\Views\pages\backend\buku.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_kategori', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/buku', [], true)
+ 5 APPPATH\Controllers\admin\Buku.php(29): view('pages/backend/buku', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 05:34:59 --> ParseError: syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\pages\login.php on line 61.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\login.php(53): view('pages/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-27 05:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-27 05:37:36 --> ParseError: syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\pages\login.php on line 90.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\login.php(53): view('pages/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-27 05:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-27 05:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-27 05:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-27 05:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-27 05:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
