@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 use App\Models\bukuModels;
 use App\Models\kategoriModels;
+use App\Models\rakModels;
 
 class Buku extends BaseController
 
@@ -15,6 +16,7 @@ class Buku extends BaseController
     {
         $this->buku = new bukuModels();
         $this->kategori = new kategoriModels();
+        $this->rak = new rakModels();
     }
     public function index()
     {
@@ -25,7 +27,11 @@ class Buku extends BaseController
 
     public function tambah()
     {
-        $data = ['title' => 'Tambah Data Buku'];
+        $data = [
+            'Kategori' => $this->kategori->findAll(),
+            'Rak' => $this->rak->findAll(),
+        ];
+
         return view('pages/backend/buku/tambah', $data);
     }
     public function simpan()
@@ -72,7 +78,9 @@ class Buku extends BaseController
                 return redirect()->back()->with('errors', 'File sudah di pindahkan!');
             }
         }
-        $this->bukuModels->save([
+        $id_kategori = $this->request->getVar('id_kategori');
+        $id_rak = $this->request->getVar('id_rak');
+        $this->buku->save([
             'judul' => $this->request->getVar('judul_buku'),
             'pengarang'  => $this->request->getVar('pengarang'),
             'penerbit' => $this->request->getVar('penerbit'),
@@ -80,6 +88,8 @@ class Buku extends BaseController
             'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
             'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
             'cover_buku' => $fileName,
+            'id_kategori' => $id_kategori,
+            'id_rak'    => $id_rak,
         ]);
         return redirect()->to('admin/buku');
     }

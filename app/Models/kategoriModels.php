@@ -10,6 +10,7 @@ class kategoriModels extends Model
     protected $primaryKey = 'id_kategori';
     protected $allowedFields = ['nama_kategori'];
 
+
     public function data_kategori($id_kategori)
     {
         return $this->find($id_kategori);

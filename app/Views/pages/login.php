@@ -60,6 +60,7 @@
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-primary btn-user btn-block" name="login" value="LOGIN">Login</button>
+                                            <button type="submit" class="btn btn-primary btn-user btn-block" name="login" value="Register">Register</button>
 
                                         </form>
 

@@ -24,6 +24,7 @@
                             <th>Ringkasan Buku</th>
                             <th>Jumlah Salinan Tersedia</th>
                             <th>Kategori</th>
+                            <th>Rak</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -41,6 +42,7 @@
                                 <td><?= $value->ringkasan_buku ?></td>
                                 <td><?= $value->jumlah_salinan_tersedia ?></td>
                                 <td><?= $value->nama_kategori ?></td>
+                                <td><?= $value->nama_rak; ?></td>
                                 <td>
                                     <a href="buku/edit/<?= $value->id_buku ?>" class="btn btn-warning btn-sm">Edit</a>
                                     <a href="buku/delete/<?= $value->id_buku ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
