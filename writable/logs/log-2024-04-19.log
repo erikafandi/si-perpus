@@ -1,0 +1,22 @@
+CRITICAL - 2024-04-19 02:39:36 --> ErrorException: Undefined variable: buku
+in APPPATH\Views\pages\backend\home.php on line 22.
+ 1 APPPATH\Views\pages\backend\home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\home.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/home', [], true)
+ 5 APPPATH\Controllers\admin\Home.php(24): view('pages/backend/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 02:40:26 --> ErrorException: Undefined variable: buku
+in APPPATH\Views\pages\backend\home.php on line 22.
+ 1 APPPATH\Views\pages\backend\home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\home.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/home', [], true)
+ 5 APPPATH\Controllers\admin\Home.php(24): view('pages/backend/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
