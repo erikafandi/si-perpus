@@ -30,7 +30,7 @@
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $key['nama_petugas']; ?></td>
-                                <td><img src="<?= base_url('img/petugas/' . $key['foto_petugas']); ?>" style="width: 200px;"></td>
+                                <td><img src="<?= base_url('img/petugas/' . $key['foto_petugas']); ?>" style="height: 100px; width: 75px;"></td>
                                 <td><?= $key['email']; ?></td>
                                 <td><?= $key['no_hp']; ?></td>
                                 <td>

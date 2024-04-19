@@ -30,7 +30,7 @@ class transaksi extends BaseController
             'anggota' => $this->anggota->findAll(),
             'buku' => $this->buku->findAll(),
         ];
-        return view('pages/backend/transaksi', $data);
+        return view('pages/backend/transaksi/tambah', $data);
     }
 
     public function simpan()
