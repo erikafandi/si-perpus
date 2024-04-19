@@ -233,3 +233,15 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
 11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
 12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-15 16:16:06 --> Error: Call to a member function data_buku() on null
+in APPPATH\Controllers\admin\Buku.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('18')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-15 16:23:04 --> Error: Call to a member function data_buku() on null
+in APPPATH\Controllers\admin\Buku.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\Buku->edit('37')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Buku))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

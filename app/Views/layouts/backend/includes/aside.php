@@ -78,6 +78,15 @@
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     <div class="sidebar-heading">
+        Transaksi
+    </div>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('admin/transaksi') ?>">
+            <i class="fas fad fa-list-check"></i>
+            <span>Transaksi</span></a>
+    </li>
+    <hr class="sidebar-divider d-none d-md-block">
+    <div class="sidebar-heading">
         Petugas/Operator
     </div>
 

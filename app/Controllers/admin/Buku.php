@@ -11,7 +11,7 @@ use App\Models\rakModels;
 class Buku extends BaseController
 
 {
-    protected $bukuModels, $kategoriModels;
+    protected $bukuModels, $kategoriModels, $rakModels;
     public function __construct()
     {
         $this->buku = new bukuModels();
@@ -96,10 +96,14 @@ class Buku extends BaseController
 
     public function edit($id_buku)
     {
-        $buku = $this->bukuModels->data_buku($id_buku);
+        $buku = $this->buku->data_buku($id_buku);
+        $kategori = $this->kategori->findAll();
+        $rak = $this->rak->findAll();
         $data = [
-            'title' => 'Edit Data agenda',
-            'buku' => $buku
+            'title' => 'Edit Data Buku', // Mengubah judul
+            'Buku' => $buku,
+            'Kategori' => $kategori,
+            'Rak' => $rak,
         ];
 
         return view('pages/backend/buku/edit', $data);
@@ -131,6 +135,8 @@ class Buku extends BaseController
             'tahun_terbit' => $this->request->getVar('tahun_terbit'),
             'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
             'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
+            'id_kategori' => $this->request->getVar('id_kategori'),
+            'id_rak' => $this->request->getVar('id_rak'),
         ];
         if ($cover->getFilename() != null) {
             // jika file nya tidak null atau kosong ( empty )
@@ -139,7 +145,7 @@ class Buku extends BaseController
                 // tampil pesan error
                 return redirect()->back()->with('errors', $this->validator->getErrors())->withInput();
             }
-            $fileLama = $this->bukuModels->find($id_buku)['cover_buku'];
+            $fileLama = $this->buku->find($id_buku)['cover_buku'];
             $filePath = ROOTPATH . 'public/img/cover_buku/' . $fileLama;
             if (file_exists($filePath)) {
                 unlink($filePath);
@@ -169,16 +175,19 @@ class Buku extends BaseController
                 'ringkasan_buku' => $this->request->getVar('ringkasan_buku'),
                 'jumlah_salinan_tersedia' => $this->request->getVar('jumlah_salinan_tersedia'),
                 'cover_buku' => $fileName,
+                'id_kategori' => $this->request->getVar('id_kategori'),
+                'id_rak' => $this->request->getVar('id_rak')
             ];
         }
 
-        $this->bukuModels->update_data($data, $id_buku);
+        $this->buku->update_data($data, $id_buku);
         return redirect()->to('admin/buku');
     }
 
+
     public function delete($id_buku)
     {
-        $buku = $this->bukuModels->data_buku($id_buku);
+        $buku = $this->buku->data_buku($id_buku);
 
         // nama file yang berada dikolom userfile
         $file = $buku['cover_buku'];
@@ -187,7 +196,7 @@ class Buku extends BaseController
         unlink('../public/img/cover_buku/' . $file);
 
         // penghapusan database
-        $this->bukuModels->delete_data($id_buku);
+        $this->buku->delete_data($id_buku);
 
         // mengakses halaman berita
         return redirect()->to('admin/buku');
