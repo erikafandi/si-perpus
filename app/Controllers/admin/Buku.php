@@ -100,7 +100,7 @@ class Buku extends BaseController
         $kategori = $this->kategori->findAll();
         $rak = $this->rak->findAll();
         $data = [
-            'title' => 'Edit Data Buku', // Mengubah judul
+            'title' => 'Edit Data Buku',
             'Buku' => $buku,
             'Kategori' => $kategori,
             'Rak' => $rak,

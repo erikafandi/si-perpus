@@ -7,14 +7,14 @@
     </div>
     <div class="row">
         <?php
-        foreach ($buku as $key) : ?>
+        foreach ($Buku as $key => $value) : ?>
             <div class="col-md-6">
 
                 <div class="book-card">
-                    <img src="<?= base_url('img/banner/bg_1.jpg'); ?>" alt="Book 1 Cover" class="book-cover">
+                    <img src="<?= 'img/cover_buku/' . $value->cover_buku ?>" alt="Book 1 Cover" class="book-cover">
                     <div class="book-details">
-                        <h2 class="book-title"><?= $key['judul']; ?></h2>
-                        <p class="book-description"><?= $key['ringkasan_buku']; ?></p>
+                        <h2 class="book-title"><?= $value->judul ?></h2>
+                        <p class="book-description"><?= implode(' ', array_slice(explode(' ', $value->ringkasan_buku), 0, 15)) ?></p>
                     </div>
                 </div>
             </div>

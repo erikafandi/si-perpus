@@ -56,6 +56,25 @@
         </div>
     </li>
 
+    <hr class="sidebar-divider d-none d-md-block">
+    <div class="sidebar-heading">
+        Transaksi
+    </div>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#dt" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas   fad fa-book"></i>
+            <span>Data Transaksi</span>
+        </a>
+        <div id="dt" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+
+                <a class="collapse-item" href="<?= base_url('admin/transaksi') ?>">
+                    Transaksi</a>
+                <a class="collapse-item" href="<?= base_url('admin/kategori') ?>">Histori Transaksi</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
 
@@ -76,15 +95,8 @@
 
 
     <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
-    <div class="sidebar-heading">
-        Transaksi
-    </div>
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('admin/transaksi') ?>">
-            <i class="fas fad fa-list-check"></i>
-            <span>Transaksi</span></a>
-    </li>
+
+
     <hr class="sidebar-divider d-none d-md-block">
     <div class="sidebar-heading">
         Petugas/Operator

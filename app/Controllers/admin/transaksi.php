@@ -46,4 +46,47 @@ class transaksi extends BaseController
         ]);
         return redirect()->to('admin/transaksi');
     }
+
+    public function edit($id_transaksi)
+    {
+        $buku = $this->buku->data_buku($id_buku);
+        $anggota = $this->anggota->findAll();
+        $data = [
+            'title' => 'Edit Data Transaksi',
+            'Buku' => $buku,
+            'Anggota' => $anggota,
+        ];
+
+        return view('pages/backend/transaksi/edit', $data);
+    }
+
+    public function update()
+    {
+        $id_anggota = $this->request->getVar('id_anggota');
+        $id_buku = $this->request->getVar('id_buku');
+        $data = [
+            'id_anggota' => $id_anggota,
+            'id_buku' => $id_buku,
+            'tanggal_peminjaman' => $this->request->getVar('tanggal_peminjaman'),
+            'tanggal_pengembalian' => $this->request->getVar('tanggal_pengembalian'),
+        ];
+
+
+        $this->transaksi->update_data($data, $id_transaksi);
+        return redirect()->to('admin/transaksi');
+    }
+
+
+    public function delete($id_transaksi)
+    {
+
+
+
+
+        // penghapusan database
+        $this->transaksi->delete_data($id_transaksi);
+
+        // mengakses halaman berita
+        return redirect()->to('admin/transaksi');
+    }
 }

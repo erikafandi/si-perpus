@@ -7,6 +7,7 @@
         <div class="form-group">
             <label for="anggota">Nama Anggota</label>
             <select name="id_anggota" class="form-control" id="anggota">
+                <option value="">&nbsp;</option>
                 <?php foreach ($anggota as $anggota) : ?>
                     <option value="<?= $anggota['id_anggota']; ?>"><?= $anggota['nama_anggota']; ?></option>
                 <?php endforeach; ?>

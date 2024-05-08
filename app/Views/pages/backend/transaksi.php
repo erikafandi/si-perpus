@@ -37,8 +37,8 @@
                             <td><?= $value->tanggal_peminjaman ?></td>
                             <td><?= $value->tanggal_pengembalian ?></td>
                             <td>
-                                <a href="buku/edit/<?= $value->id_transaksi ?>" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="buku/delete/<?= $value->id_transaksi ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Hapus</a>
+                                <a href="transaksi/edit/<?= $value->id_transaksi ?>" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="transaksi/delete/<?= $value->id_transaksi ?>" class="btn btn-success btn-sm" onclick="return confirm('Apakah Buku Sudah Dikembalikan?')">Selesai</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

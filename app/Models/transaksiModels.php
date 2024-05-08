@@ -18,4 +18,22 @@ class transaksiModels extends Model
         $query = $builder->get();
         return $query->getResult();
     }
+
+    public function data_transaksi($id_transaksi)
+    {
+        return $this->find($id_transaksi);
+    }
+    public function update_data($data, $id_transaksi)
+    {
+        $query = $this->db->table($this->table)->update(
+            $data,
+            array('id_transaksi' => $id_transaksi)
+        );
+        return $query;
+    }
+    public function delete_data($id_transaksi)
+    {
+        $query = $this->db->table($this->table)->delete(array('id_transaksi' => $id_transaksi));
+        return $query;
+    }
 }
